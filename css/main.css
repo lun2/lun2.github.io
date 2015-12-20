@@ -6,6 +6,7 @@
 .topnav {
     position: relative;
     bottom: 0;
+    margin: 0px auto;
     position: fixed;
 }
 
@@ -47,18 +48,11 @@
     .topnav ul {
         /*>600px 滿版*/
         width: 100%;
-        padding: 0;
+        margin: 0px auto;
         /**/
         position: absolute;
-        /*貼齊上面*/
+        /*向上展開*/
         bottom: 0px;
-        /*貼齊左邊*/
-        left: 0px;
-        border: 1px solid #ddd;
-        /*變圓角*/
-        border-radius: 5px;
-        /*陰影效果*/
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     }
     .topnav li {
         display: none;
