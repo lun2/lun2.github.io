@@ -6,13 +6,11 @@
 .topnav {
     position: relative;
     bottom: 0;
-    margin: 0px auto;
+    right: 0;
     position: fixed;
 }
 
 .topnav li {
-    margin: 0 5px 10px 0;
-    padding: 0;
     /*去點點*/
     list-style: none;
     /*直變橫*/
@@ -20,7 +18,7 @@
 }
 
 .topnav a {
-    padding: 3px;
+    padding: 0px;
     /*去超連結底線*/
     text-decoration: none;
     /*換超連結顏色*/
@@ -43,28 +41,32 @@
 @media screen and (max-width: 600px) {
     .topnav {
         position: relative;
+        /*最少高度*/
         min-height: 60px;
     }
     .topnav ul {
         /*>600px 滿版*/
-        width: 100%;
-        margin: 0px auto;
+        width: 50%;
+        /*不會少於邊界*/
+        padding: 0;
         /**/
         position: absolute;
         /*向上展開*/
         bottom: 0px;
+        /*整體置右*/
+        right: 10px;
+        border: 1px solid #ddd;
     }
     .topnav li {
         display: none;
-        margin: : 0;
     }
     .topnav .current {
         display: block;
     }
     .topnav a {
         display: block;
-        padding: 5px 5px 5px 20px;
-        text-align: left;
+        /*文字靠右*/
+        text-align: right;
     }
     .topnav .current a {
         color: #FFCEFA;
@@ -74,6 +76,5 @@
     }
     .topnav ul:hover li {
         display: block;
-        margin: 3px;
     }
 }

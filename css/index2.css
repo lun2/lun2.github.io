@@ -1,0 +1,113 @@
+* {
+    /*自動調整大小*/
+    background-color: ;
+    max-width: auto;
+}
+
+ul {
+    /*ul中的項目樣式*/
+    list-style: none;
+    /*清除項目樣式*/
+}
+
+ul,
+li {
+    /*清除ul, il元素的外距跟內距*/
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    /*選單樣式*/
+    color: #000000;
+    /*文字黑色*/
+    text-decoration: none;
+    /*去除連結底線*/
+}
+
+#header {
+    background-color: ;
+    text-align: left;
+    font-family: 'Cousine', 'Roboto', sans-serif;
+    color: #000000;
+    font-size: 40px;
+    padding: 50px 0px 0px 20px;
+}
+
+
+/*--選單開始---------------------------------------*/
+
+#nav {
+    width: 70%;
+    /*調整母選單的大小*/
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    background: #FFFFFF;
+    position: relative;
+    left: 230px;
+    top: -45px;
+}
+
+#nav a:hover {
+    /*設定滑鼠滑過菜單樣式*/
+    color: #FFABD0;
+    /*文字白色*/
+}
+
+#nav ul.list>li {
+    display: block;
+    float: left;
+    position: relative;
+    width: 16.66%;
+    /*母選單背景顏色的大小*/
+    padding: 5px 0px;
+    text-align: center;
+}
+
+#nav ul.list>li ul {
+    display: none;
+    position: absolute;
+    margin: 5px auto 0 auto;
+    width: 100%;
+    /*調整子選單的大小*/
+}
+
+#nav ul.list>li ul li {
+    /*點選母選單之子選單背景顏色*/
+    text-align: center;
+    background: #FFD946;
+    width: 100%;
+    padding: 5px 0px;
+    /*選單背景顏色長度一致*/
+}
+
+#nav ul.list>li:hover {
+    /*點選母選單背景顏色*/
+    background: #FF6A9F;
+}
+
+#nav ul.list>li:hover ul {
+    /*顯示子選單*/
+    display: block;
+}
+
+#nav ul.list>li:hover ul li:hover {
+    /*點選子選單背景顏色*/
+    background: #FF6A9F;
+}
+
+
+/*--選單結束---------------------------------------*/
+
+#section {
+    background-color: #FFFFFF;
+    position: relative;
+    top: 500px;
+}
+
+#footer {
+    background-color: #FFFFFF;
+    padding-bottom: 0px;
+    position: relative;
+}
