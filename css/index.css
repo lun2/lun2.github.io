@@ -1,8 +1,90 @@
 * {
-    box-sizing: content-box;
+    font-size: 35px;
+    font-family: 'Sigmar One', 'Cousine', 'Roboto', sans-serif;
 }
 
-.row {
-    margin: 0px auto;
-    padding: 100px, 10px, 0px, 10px;
+.topnav {
+    position: relative;
+    margin: 20px;
+}
+
+.topnav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.topnav li {
+    margin: 0 5px 10px 0;
+    padding: 0;
+    /*去點點*/
+    list-style: none;
+    /*直變橫*/
+    display: inline-block;
+}
+
+.topnav a {
+    padding: 3px;
+    /*去超連結底線*/
+    text-decoration: none;
+    /*換超連結顏色*/
+    color: #FF679E;
+    line-height: 100%;
+}
+
+.topnav a:hover {
+    /*滑鼠滑過換超連結顏色*/
+    color: #FFAC14;
+}
+
+.topnav .current a {
+    /*滑鼠滑過item1*/
+    background-color: #95FFD4;
+    color: #E8ABFF;
+    /*變圓角*/
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav {
+        position: relative;
+        min-height: 60px;
+    }
+    .topnav ul {
+        /*>600px 滿版*/
+        width: 100%;
+        padding: 0;
+        /**/
+        position: absolute;
+        /*貼齊上面*/
+        top: 0px;
+        /*貼齊左邊*/
+        left: 0px;
+        border: 1px solid #ddd;
+        /*變圓角*/
+        border-radius: 20px;
+        /*陰影效果*/
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    .topnav li {
+        display: none;
+        margin: : 0;
+    }
+    .topnav .current {
+        display: block;
+    }
+    .topnav a {
+        display: block;
+        padding: 5px 5px 5px 20px;
+        text-align: left;
+    }
+    .topnav .current a {
+        color: #FFCEFA;
+    }
+    .topnav ul:hover {
+        background: ;
+    }
+    .topnav ul:hover li {
+        display: block;
+        margin: 3px;
+    }
 }
