@@ -1,11 +1,12 @@
 * {
-    font-size: 35px;
     font-family: 'Sigmar One', 'Cousine', 'Roboto', sans-serif;
 }
 
 .topnav {
     position: relative;
     margin: 20px;
+    /*固定位置*/
+    position: fixed;
 }
 
 .topnav ul {
@@ -27,7 +28,7 @@
     /*去超連結底線*/
     text-decoration: none;
     /*換超連結顏色*/
-    color: #FF679E;
+    color: #000000;
     line-height: 100%;
 }
 
@@ -36,12 +37,23 @@
     color: #FFAC14;
 }
 
+.topnav .current img {
+    /*去超連結框*/
+    border: 0;
+    /*圖百分之40*/
+    width: 40%;
+}
+
 .topnav .current a {
     /*滑鼠滑過item1*/
-    background-color: #95FFD4;
-    color: #E8ABFF;
-    /*變圓角*/
+    background-color: ;
+    color: #000000;
+    /*圓角邊筐*/
     border-radius: 20px;
+}
+
+.topnav .secondary a {
+    font-size: 50px;
 }
 
 @media screen and (max-width: 600px) {
@@ -75,10 +87,10 @@
     .topnav a {
         display: block;
         padding: 5px 5px 5px 20px;
-        text-align: left;
+        text-align: center;
     }
     .topnav .current a {
-        color: #FFCEFA;
+        color: #000000;
     }
     .topnav ul:hover {
         background: ;
