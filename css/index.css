@@ -41,7 +41,7 @@
     /*去超連結框*/
     border: 0;
     /*圖百分之40*/
-    width: 40%;
+    width: 100%;
 }
 
 .topnav .current a {
