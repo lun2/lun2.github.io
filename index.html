@@ -15,6 +15,7 @@
     <link href='https://fonts.googleapis.com/css?family=Cousine:400,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+    <script src="jquery-1.11.3.min.js"></script>
     <title>STRAY</title>
 </head>
 
@@ -29,11 +30,17 @@
             <li class="secondary"><a href="ebooks.html" target=_self>EBOOKS</a></li>
         </ul>
     </nav>
+    </div>
+    <div class="main">
+        <img class="121" src="image/121.jpg" alt="12夜">
+        <script>
+        $(document).ready(
+            function() {
+                $(".121").hide();
+                $(".121").fadeIn(2000);
+            });
+        </script>
 </body>
-<aside class="content"></aside>
-<div class="main">
-    <img src="image/121.jpg" alt="12夜">
-</div>
 <footer></footer>
 
 </html>

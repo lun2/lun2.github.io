@@ -47,7 +47,7 @@
 .topnav .current a {
     /*滑鼠滑過item1*/
     background-color: ;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 .topnav .secondary a {
@@ -82,14 +82,28 @@
         padding: 5px 5px 5px 20px;
         text-align: center;
     }
+    .topnav a:hover {
+        /*滑鼠滑過換超連結顏色*/
+        color: #FFAC14;
+    }
     .topnav .current a {
         color: #000000;
     }
     .topnav ul:hover {
-        background: ;
+        /*選單灰框*/
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid silver;
+        display: inline-block;
     }
     .topnav ul:hover li {
         display: block;
         margin: 3px;
     }
+}
+
+.main img {
+    margin: 110px;
+    top: 250px;
+    width: 75%;
+    clear: both;
 }
