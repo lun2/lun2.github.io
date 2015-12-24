@@ -41,19 +41,17 @@
     /*去超連結框*/
     border: 0;
     /*圖百分之40*/
-    width: 100%;
+    width: 80px;
 }
 
 .topnav .current a {
     /*滑鼠滑過item1*/
     background-color: ;
     color: #000000;
-    /*圓角邊筐*/
-    border-radius: 20px;
 }
 
 .topnav .secondary a {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 @media screen and (max-width: 600px) {
@@ -71,11 +69,6 @@
         top: 0px;
         /*貼齊左邊*/
         left: 0px;
-        border: 1px solid #ddd;
-        /*變圓角*/
-        border-radius: 20px;
-        /*陰影效果*/
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     }
     .topnav li {
         display: none;
