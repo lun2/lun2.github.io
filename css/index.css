@@ -107,7 +107,8 @@
 
 .main img {
     margin: 110px;
-    top: 250px;
-    width: 75%;
+    top: 50px;
+    width: 65%;
     clear: both;
+    position: fixed;
 }
